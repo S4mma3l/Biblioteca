@@ -1,5 +1,3 @@
-# main.py
-
 from fastapi import FastAPI, Query
 from supabase import create_client, Client
 import os
