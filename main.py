@@ -12,7 +12,7 @@ app = FastAPI()
 
 # Configuración de CORS
 origins = [
-    "https://s4mma3l.github.io"  # Reemplaza con la URL de tu frontend en GitHub Pages
+    "https://biblioteca-three-chi.vercel.app"  # Reemplaza con la URL de tu frontend en GitHub Pages
 ]
 
 app.add_middleware(
