@@ -64,3 +64,41 @@ header {
     color: #7A316F;
     text-decoration: none;
 }
+
+
+
+.container {
+    /* ... (estilos existentes) ... */
+    background-color: transparent; /* Fondo transparente para el contenedor */
+    box-shadow: none; /* Eliminar la sombra del contenedor */
+  }
+  
+  h1 {
+    /* ... (estilos existentes) ... */
+    font-weight: bold; /* Título en negrita */
+  }
+  
+  input[type="text"], input[type="password"] {
+    /* ... (estilos existentes) ... */
+    background-color: #1A1A1A; /* Fondo gris oscuro para los inputs */
+    color: #FFFFFF; /* Texto blanco en los inputs */
+    border: 1px solid #333333; /* Borde gris oscuro */
+  }
+  
+  button[type="submit"] {
+    /* ... (estilos existentes) ... */
+    background-color: #007BFF; /* Fondo azul para el botón */
+    color: #FFFFFF; /* Texto blanco en el botón */
+  }
+  
+  .separator {
+    /* ... (estilos existentes) ... */
+    color: #FFFFFF; /* Texto blanco para el separador */
+  }
+  
+  #google-login {
+    /* ... (estilos existentes) ... */
+    background-color: #FFFFFF; /* Fondo blanco para el botón de Google */
+    color: #000000; /* Texto negro en el botón de Google */
+    border: 1px solid #CCCCCC; /* Borde gris claro */
+  }
