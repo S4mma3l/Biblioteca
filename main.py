@@ -4,7 +4,7 @@ from supabase import create_client, Client
 import os
 from dotenv import load_dotenv
 
-# Carga las variables de entorno desde el archivo.env
+# Carga las variables de entorno desde el archivo .env
 load_dotenv()
 
 # Crea una instancia de la aplicación FastAPI
@@ -12,7 +12,7 @@ app = FastAPI()
 
 # Configuración de CORS
 origins = [
-    "https://s4mma3l.github.io/Biblioteca"
+    "https://s4mma3l.github.io"  # Reemplaza con la URL de tu frontend en GitHub Pages
 ]
 
 app.add_middleware(
@@ -32,9 +32,7 @@ try:
     supabase: Client = create_client(url, key)
 except Exception as e:
     print(f"Error al conectar a Supabase: {e}")
-    # Puedes lanzar una excepción para detener la aplicación si no se puede conectar a Supabase
     raise HTTPException(status_code=500, detail="Error al conectar a la base de datos")
-
 
 @app.get("/buscar")
 async def buscar(query: str = Query(...)):
@@ -77,3 +75,8 @@ async def obtener_libro(id_libro: int):
     except Exception as e:
         print(f"Error al obtener el libro: {e}")
         raise HTTPException(status_code=500, detail="Error al obtener el libro")
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
