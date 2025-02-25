@@ -12,7 +12,7 @@ app = FastAPI()
 
 # Configuración de CORS
 origins = [
-    "https://biblioteca-jbe7atgme-s4mma3ls-projects.vercel.app"  # Reemplaza con la URL de tu frontend en Vercel
+    "https://s4mma3l.github.io/Biblioteca/"  # Reemplaza con la URL de tu frontend en Vercel
 ]
 
 app.add_middleware(

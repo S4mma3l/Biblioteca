@@ -9,7 +9,7 @@ botonBuscar.addEventListener('click', () => {
 
 async function buscarLibros(query) {
     try {
-        const response = await fetch(`https://biblioteca-jbe7atgme-s4mma3ls-projects.vercel.app/buscar?query=${query}`);
+        const response = await fetch(`https://biblioteca-production-2e0d.up.railway.app/buscar?query=${query}`);
         const libros = await response.json();
         mostrarResultados(libros);
     } catch (error) {
